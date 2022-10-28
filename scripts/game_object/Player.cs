@@ -116,7 +116,7 @@ namespace Game.GameObject
                 text.GlobalPosition = GlobalPosition + (Vector2.Up * 24f);
                 return;
             }
-            health--;
+            // health--;
             var text2 = gameBoard.FloatingTextManager.SpawnText(health <= 0 ? "Dead!" : "Oof!");
             text2.GlobalPosition = GlobalPosition + (Vector2.Up * 24f);
             text2.SetRed();
